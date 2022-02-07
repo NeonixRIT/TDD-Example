@@ -25,8 +25,10 @@ def is_prime(number: int) -> bool:
     if number <= 1: # 0 and 1 are not prime numbers
         return False
 
-    # Check if given number is evenly divisibale by numbers from 2 upto itself
-    for i in range(2, number):
+    # Check if given number is evenly divisibale by numbers from 2 upto the square
+    # root of itself plus 1. Casts the square root too an int and adds one because
+    # range doesn't handle floats.
+    for i in range(2, int(number ** (1/2)) + 1):
         if number % i == 0:
             return False
     return True
@@ -37,7 +39,7 @@ def main():
     Main
     '''
     # Manual testing is_prime (not needed, but sometimes can help)
-    result = is_prime(5) # is_prime returns True as 5 is prime.
+    result = is_prime(433494437) # is_prime returns True as 433494437 is prime.
     print(result) # Prints True.
 
 
