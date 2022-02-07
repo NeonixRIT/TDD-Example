@@ -17,12 +17,16 @@ Comments are more indepth for example/expanatory purposes
 #   the function "is_prime" is expected to return a boolean
 def is_prime(number: int) -> bool:
     '''
-    Stubbed function that will eventually:
+    Function that is supposed to:
         Checks if a number is prime.
         Return True if the number is Prime.
         Return False if the number is not Prime.
     '''
-    return
+    # Check if given number is evenly divisibale by numbers from 2 upto itself
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
 
 
 def main():
@@ -30,8 +34,8 @@ def main():
     Main
     '''
     # Manual testing is_prime (not needed, but sometimes can help)
-    result = is_prime(5) # is_prime returns None as it is stubbed.
-    print(result) # Prints None.
+    result = is_prime(5) # is_prime returns True as 5 is prime.
+    print(result) # Prints True.
 
 
 # This stops main from running whenever this file is imported.
