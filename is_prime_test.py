@@ -28,3 +28,29 @@ def test_is_prime_non_prime():
     actual = is_prime(number) # invoke function and get actaul result
     # analyse
     assert actual == expected
+
+
+def test_is_prime_0():
+    '''
+    Test is_prime with number 0
+    '''
+    # setup
+    number = 0 # number to be passed as argument in invoke step
+    expected = False # expected result
+    # invoke
+    actual = is_prime(number) # invoke function and get actaul result
+    # analyse
+    assert actual == expected
+
+
+def test_is_prime_1():
+    '''
+    Test is_prime with number 1
+    '''
+    # setup
+    number = 1 # number to be passed as argument in invoke step
+    expected = False # expected result
+    # invoke
+    actual = is_prime(number) # invoke function and get actaul result
+    # analyse
+    assert actual == expected
