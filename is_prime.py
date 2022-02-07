@@ -22,6 +22,9 @@ def is_prime(number: int) -> bool:
         Return True if the number is Prime.
         Return False if the number is not Prime.
     '''
+    if number <= 1: # 0 and 1 are not prime numbers
+        return False
+
     # Check if given number is evenly divisibale by numbers from 2 upto itself
     for i in range(2, number):
         if number % i == 0:
