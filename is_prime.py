@@ -17,10 +17,9 @@ Comments are more indepth for example/expanatory purposes
 #   the function "is_prime" is expected to return a boolean
 def is_prime(number: int) -> bool:
     '''
-    Function that is supposed to:
-        Checks if a number is prime.
-        Return True if the number is Prime.
-        Return False if the number is not Prime.
+    Checks if a number is prime.
+    Return True if the number is Prime.
+    Return False if the number is not Prime.
     '''
     if number <= 1: # 0 and 1 are not prime numbers
         return False
@@ -36,11 +35,19 @@ def is_prime(number: int) -> bool:
 
 def main():
     '''
-    Main
+    Prompt the user for a number and print whether it is prime or not.
+    Continue to prompt until the user inputs a number less than 1.
     '''
-    # Manual testing is_prime (not needed, but sometimes can help)
-    result = is_prime(433494437) # is_prime returns True as 433494437 is prime.
-    print(result) # Prints True.
+    number = 100 # initial value for number
+                 # This just makes sure we enter the loop
+                 # The initial value will be replaced at the top of the loop.
+    while number > 0: # If number is less than 1 then break out of the loop.
+        number = int(input('Enter a natural number: ')) # prompts for a positive number
+        if is_prime(number): # Check if the number is prime
+            print(number, 'is a prime number.') # if it is, print that it is
+        else:
+            print(number, 'is not a prime number.') # if it's not, print that it's not
+        print() # print to make output more readable
 
 
 # This stops main from running whenever this file is imported.
