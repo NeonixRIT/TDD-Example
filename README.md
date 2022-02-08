@@ -4,7 +4,7 @@ Repo meant to be an example of Python Test Driven Development using pytest.
 Going through the commit history will show TDD for an example function, `is_prime`, that returns True if a number is prime or False if a number isn't. It will expect to take a positive number as a parameter.
 
 # What is TDD?
-TDD, or Test Driven Development referse to a specific programming workflow.
+TDD, or Test Driven Development refers to a specific programming workflow.
 
 ### Step 1: Create Stubbed Function.
 Start with a base definition of some function. It will be stubbed, meaning it has no functionality, it does nothing, but has a name and parameters. In this case, I'm using `is_prime`
