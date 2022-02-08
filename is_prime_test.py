@@ -150,7 +150,7 @@ def test_is_prime_24():
 
 def test_is_prime_100():
     '''
-    Test is_prime with number 23
+    Test is_prime with number 100
     '''
     # setup
     number = 100 # number to be passed as argument in invoke step
