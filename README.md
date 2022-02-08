@@ -6,10 +6,10 @@ Going through the commit history will show TDD for an example function, `is_prim
 # What is TDD?
 TDD, or Test Driven Development referse to a specific programming workflow.
 
-### Step 1: Write a stubbed function.
+### Step 1: Create Stubbed Function.
 Start with a base definition of some function. It will be stubbed, meaning it has no functionality, it does nothing, but has a name and parameters. In this case, I'm using `is_prime`
 
-### Step 2: Write a failing test.
+### Step 2: Write Failing Test(s).
 You should have an idea of what you want the function to do or what functionality you wish to add. With this idea you can write tests with some expected value results. These tests should fail as this functionality hasn't been added yet
 
 These tests should fail as the functionality hasn't been implemented yet.
@@ -28,13 +28,13 @@ Each test function should start with the word test so that pytest recognises it 
 
 Each test also should follow the same format. It should generally have 3 sections
 
-### Section 1: setup
+### Section 1: Setup
 Setup should declare variables that we will need for the function we want to test, as well as what we expect the result of the function we are testing to be
 
-### Section 2: invoke
+### Section 2: Invoke
 This is where we call the function we are testing, passing some variables we declared in the setup as arguments, and store its result in a variable.
 
-### Section 3: analyse
+### Section 3: Analyse
 This is where we compare our expected value from setup with the actual value we got in invoke. This section will have our assert call(s)
 
 Its also important to note that our test functions/cases should not have parameters (We do not learn about `pytest` fictures, or testing with them. That is what parameters are for, for pytest test functions)
@@ -51,7 +51,7 @@ Don't forget to comment your code!"
 
 I will go through and complete the assignment on this repo
 
-### Step 1a: Write Stubbed Function
+### Step 1a: Create Stubbed Function
 I created my main `is_prime.py` boilerplate file. I commented the file, created my stubbed function, commented it, created a main, commented it, and called it inside the `if __name__ == '__main__':` statement.
 
 You can browse the code here: [8dcb1e3](https://github.com/Acher0ns/TDD-Example/blob/8dcb1e390285891308c1eabcf8a27994887645f8/is_prime.py) # This is an abbreviated commit hash. You will be viewing the code at this commit.
