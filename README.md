@@ -10,13 +10,12 @@ TDD, or Test Driven Development refers to a specific programming workflow.
 Start with a base definition of some function. It will be stubbed, meaning it has no functionality, it does nothing, but has a name and parameters. In this case, I'm using `is_prime`
 
 ### Step 2: Write Failing Test(s).
-You should have an idea of what you want the function to do or what functionality you wish to add. With this idea you can write tests with some expected value results. These tests should fail as this functionality hasn't been added yet
+You should have an idea of what you want the function to do or what functionality you wish to add. With this idea you can write tests with some expected value results.
 
 These tests should fail as the functionality hasn't been implemented yet.
 
 ### Step 3: Passing Tests.
 This is where you write code in your function to make your failing tests pass.
-
 
 ### Step 4: Repeat.
 For more complicated functions, you may need to repeat step 2 and 3 until your function has all the functionality needed.
