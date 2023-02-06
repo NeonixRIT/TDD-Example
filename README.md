@@ -69,7 +69,7 @@ You can browse the new code here: [b647038](https://github.com/Acher0ns/TDD-Exam
 If you look at the function or even test `is_prime` manually in main, you would notice that our function doesn't work for 0 and 1, which are non-prime numbers, however, `is_prime` currently says that they are, because if 1 or 0 is passed as an argument, it attempts to loop through a range from 2 to 0 or 2 to 1. This loops 0 times and jumps to the bottom of the function and returns True.
 
 ### Step 2b: Write Failing Tests For New Cases
-Here we write 2 failings tests for out new cases of if 0 and 1 with the expected value of False because we don't expect 0 and 1 to be prime numbers.
+Here we write 2 failings tests for out new cases of 0 and 1 with the expected value of False because we don't expect 0 and 1 to be prime numbers.
 
 You can browse the new tests here: [fd27cfe](https://github.com/Acher0ns/TDD-Example/blob/fd27cfee90537484ee359e2740ae19b10b01e769/is_prime_test.py)
 
@@ -84,7 +84,7 @@ Regression testing is writing tests for your code AFTER you write it. Usually we
 You can browse the new tests here: [613ade5](https://github.com/Acher0ns/TDD-Example/blob/613ade50384c22953a96e090959abde0f89b04ff/is_prime_test.py)
 
 ### Intermediary Step: Refactoring
-Wait. Another step? I thought we were done! Wrong! Code can almost always be improved! What happens if we want to check if a REALLY large number is prime? If we want to test a number like 433494437 is prime we will have to check if every number from 2 to that number can evenly divide it to see if its prime. This will take too long. BUT there is a way we can simplify this. I won't go into the math but it turns out we only need to check numbers from 2 up to the square root of the number we are trying to check. So lets change out code to implement this improve ment.
+Wait. Another step? I thought we were done! Wrong! Code can almost always be improved! What happens if we want to check if a REALLY large number is prime? If we want to test a number like 433494437 is prime we will have to check if every number from 2 to that number can evenly divide it to see if its prime. This will take too long. BUT there is a way we can simplify this. I won't go into the math but it turns out we only need to check numbers from 2 up to the square root of the number we are trying to check. So lets change our code to implement this improvement.
 
 You can browse the new code here: [9573564](https://github.com/Acher0ns/TDD-Example/blob/9573564845c61b5754615608c82231ceb4faee51/is_prime.py)
 
@@ -93,6 +93,6 @@ Notice: All the tests still pass!
 ### Final Step: Finish The Assignment
 Now we have our `is_prime` function implemented, we can implement `main` to prompt a user for a number and print if that number is prime or not and should continue to prompt until the user inputs a number less than 1.
 
-Normally we do not need to test `main` functions and in this case we can since it is taking input and we haven't learned how to test that.
+Normally we do not need to test `main` functions and in this case we can't since it is taking input and we haven't learned how to test that.
 
 You can browse the new code here: [9408cd5](https://github.com/Acher0ns/TDD-Example/blob/9408cd50e47ea84b909e4af91fba2936ebaf3fd7/is_prime.py)
