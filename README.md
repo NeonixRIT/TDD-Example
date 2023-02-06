@@ -79,7 +79,7 @@ Here, I wrote the minimal code needed to make the new tests pass for new test ca
 You can browse the new code here: [68920b6](https://github.com/Acher0ns/TDD-Example/blob/68920b6ccf6051cdf670d60c8b50926eaf3fc8eb/is_prime.py)
 
 ### Intermediary Step: Regression Testing
-Regression testing is writing tests for you code AFTER you write it. Usually we don't want to do this, however, sometimes it happens like in the step above we happened to handle negative numbers as well. So, lets now write `passing` tests for those cases as well. I will also add test cases for a few other prime/non-prime numbers to attempt to cover more bases. Again, these tests should all pass.
+Regression testing is writing tests for your code AFTER you write it. Usually we don't want to do this, however, sometimes it happens like in the step above we happened to handle negative numbers as well. So, lets now write `passing` tests for those cases as well. I will also add test cases for a few other prime/non-prime numbers to attempt to cover more bases. Again, these tests should all pass.
 
 You can browse the new tests here: [613ade5](https://github.com/Acher0ns/TDD-Example/blob/613ade50384c22953a96e090959abde0f89b04ff/is_prime_test.py)
 
